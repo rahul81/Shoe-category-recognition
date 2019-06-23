@@ -87,6 +87,7 @@ print(y)
 print(y.shape)
 
 
+# saving the numpy files with image and label data
 
 np.save('.../filename.npy',x)
 np.save('.../filename.npy',y)
