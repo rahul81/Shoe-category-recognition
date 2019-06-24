@@ -48,7 +48,7 @@ for i in ID:
 	image_path = os.path.join(datadir,i)
 	if os.path.exists(image_path):
 		img = cv2.imread(os.path.join(datadir,i),cv2.IMREAD_GRAYSCALE)
-		img = cv2.resize(img,(100,100))
+		img = cv2.resize(img,(128,128))
 		data = np.append(data,img)
 		labels.append(label[c])
 		c=c+1
@@ -60,7 +60,7 @@ for i in ID:
 
 
 len_data= count
-data = data.reshape(len_data,100,100) 
+data = data.reshape(len_data,128,128) 
 
 print(data.shape)
 
