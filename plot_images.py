@@ -29,8 +29,7 @@ def plot_images(images, cls_true, cls_pred=None):
         ax.set_xticks([])
         ax.set_yticks([])
     
-    # Ensure the plot is shown correctly with multiple plots
-    # in a single Notebook cell.
+
     plt.show()
 
 
